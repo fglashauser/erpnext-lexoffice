@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-30 09:51:13.201713",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "api_key",
+  "au_sales_invoice",
+  "print_format",
+  "lang",
+  "letterhead"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "API-Key",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "au_sales_invoice",
+   "fieldtype": "Check",
+   "label": "Auto-Upload Sales Invoice (on submit)"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Invoice Print Format",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "lang",
+   "fieldtype": "Link",
+   "label": "Sales Invoice Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "letterhead",
+   "fieldtype": "Link",
+   "label": "Sales Invoice Letterhead",
+   "options": "Letter Head"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-30 10:15:39.161204",
+ "modified_by": "Administrator",
+ "module": "Lexoffice",
+ "name": "Lexoffice Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

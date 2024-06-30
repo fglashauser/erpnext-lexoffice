@@ -4,7 +4,13 @@ app_publisher = "PC-Giga"
 app_description = "Auto Invoice Uploads to Lexoffice"
 app_email = "florian.glashauser@pc-giga.de"
 app_license = "mit"
-# required_apps = []
+required_apps = ["erpnext"]
+
+doc_events = {
+    "Sales Invoice": {
+        "on_submit": "lexoffice.events.sales_invoice.upload"
+    }
+}
 
 # Includes in <head>
 # ------------------
